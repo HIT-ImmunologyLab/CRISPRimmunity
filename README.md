@@ -152,10 +152,6 @@ Important molecular events annotation module:
     Detection of prophage event:
     --prophage_thread_num <x>  : number of threads (CPUs) to use in the prophage detection, default:3
     
-    Detection of self-targeting event:
-    --mismatch <x>             : maximum mismatch to report an alignment with self-genome for self-targeting , default:2
-    --cov <x>                  : minimum coverage to report an alignment with self-genome for self-targeting, default:1
-    
     Detection of MGE-targeting event:
     --phage_mismatch <x>       : maximum mismatch to report an alignment with MGE database for MGE-targeting, default:2
 	--phage_coverage <x>       : minimum coverage to report an alignment with MGE database for MGE-targeting, default:0.7
