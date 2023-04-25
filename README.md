@@ -60,16 +60,16 @@ git clone https://github.com/HIT-ImmunologyLab/CRISPRimmunity.git
 
 - step2: Download CRISPRimmunity database and data for standalone from CRISPRimmunity webserver and check MD5
 
-Due to the large size of the database file (~XXXG), we recommend using -c (continue) and -b (background) parameters of wget to avoid the data loss caused by network outages, and checking MD5 to verify the integrity of the downloaded files.
+Due to the large size of the database file (~4G), we recommend using -c (continue) and -b (background) parameters of wget to avoid the data loss caused by network outages, and checking MD5 to verify the integrity of the downloaded files.
 
 ```shell
 ## md5 checksum: XXX
 ### Download Database
-wget -c -b XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+wget -c -b http://www.microbiome-bigdata.com/CRISPRimmunity/static/files/download/database.tar.gz
 ### Check md5 (e2ac0981ab07b4529d857c5c778f30e6 )
 md5sum database.tar.gz
 ### Download Data 
-wget -c -b XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+wget -c -b http://www.microbiome-bigdata.com/CRISPRimmunity/static/files/download/data.tar.gz
 ### Check md5 (6f577bbc661276e597b237f80870f2b0)
 md5sum data.tar.gz
 ```
